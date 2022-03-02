@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Window from "./components/Window/Window";
+
+// ## make so the window title changes for something like "Congratulations!" when you win a tenzies game
+// # try to add functionality to the close, resize and minimize buttons
+
+// design https://github.com/marcantondahmen/automad-terminal
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Window title={"Tenzies Game!"} />
     </div>
   );
 }
