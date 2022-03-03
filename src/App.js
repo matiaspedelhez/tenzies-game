@@ -6,6 +6,7 @@ function App() {
   const [screenWidth, setScreenWidth] = React.useState(0);
 
   React.useEffect(() => {
+    handleScreenWidth();
     window.addEventListener("resize", handleScreenWidth);
     return () => {
       window.removeEventListener("resize", handleScreenWidth);
@@ -16,7 +17,7 @@ function App() {
     setScreenWidth(window.innerWidth);
   }
 
-  return screenWidth > 1000 ? ( //
+  return screenWidth > 999 ? ( //
     <div className="App">
       <Window />
       <a
