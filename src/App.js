@@ -1,15 +1,19 @@
 import React from "react";
 import Window from "./components/Window/Window";
-
-// ## make so the window title changes for something like "Congratulations!" when you win a tenzies game
-// # try to add functionality to the close, resize and minimize buttons
-
-// design https://github.com/marcantondahmen/automad-terminal
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Window title={"Tenzies Game!"} />
+    <div className="App" useRef>
+      <Window />
+      <a
+        href="https://www.linkedin.com/in/matias-pedelhez-a84b061b4/"
+        target="_blank"
+        className="linkedin-link"
+        rel="noreferrer"
+      >
+        in/matias-pedelhez-a84b061b4/
+      </a>
     </div>
   );
 }

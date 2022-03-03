@@ -1,0 +1,14 @@
+.Die{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 1.66rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    p{
+        user-select: none;
+    }
+}

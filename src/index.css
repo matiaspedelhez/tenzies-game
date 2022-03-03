@@ -12,4 +12,12 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
+}
+
+::moz-selection{
+  background-color: #5035FF;
+}
+::selection {
+  background-color: #5035FF;
 }
